@@ -64,7 +64,7 @@ for i in torch.arange(len(param_config.dataset_list)):
             element_num = train_data.n_smpl * train_data.n_fea
 
             noise_mean = torch.zeros(train_data.n_smpl, train_data.n_fea)
-            noise_std = 0.8 * torch.ones(train_data.n_smpl, train_data.n_fea)
+            noise_std = torch.ones(train_data.n_smpl, train_data.n_fea)
             noise = torch.normal(noise_mean, noise_std).to(param_config.device)
             # noise = torch.randn(train_data.n_smpl, train_data.n_fea).to(param_config.device)
             # element wise
