@@ -2,18 +2,18 @@
 This is the code for the paper "Robust Fuzzy Neural Network with an Adaptive Inference Engine"
 
 # Requirements
-python=3.7.13
-pytorch~=1.11.0
-scipy~=1.7.3
-scikit-learn~=1.0.2
-pyyaml~=6.0
-numpy~=1.21.5
-torchmetrics~=0.10.0
-torchvision~=0.12.0
-matplotlib~=3.5.3
-pyro-api~=0.1.2
-pyro-ppl~=1.8.2
-tqdm~=4.64.1
+-	python=3.7.13
+-	pytorch~=1.11.0
+-	scipy~=1.7.3
+-	scikit-learn~=1.0.2
+-	pyyaml~=6.0
+-	numpy~=1.21.5
+-	torchmetrics~=0.10.0
+-	torchvision~=0.12.0
+-	matplotlib~=3.5.3
+-	pyro-api~=0.1.2
+-	pyro-ppl~=1.8.2
+-	tqdm~=4.64.1
 
 # Training Settings
 
@@ -32,6 +32,7 @@ When training the GP and DGP models, we used the radial basis function (RBF) as 
 
 # Run
 mAP is obtained via running the code main.py
+
 f1 score is obtained via running the code main_f1.py
 
 
