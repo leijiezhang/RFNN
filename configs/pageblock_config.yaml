@@ -1,0 +1,38 @@
+model: 'fpn_cov1d' #
+
+device: 'cuda:0' # 'cpu' 'cuda:0'
+n_batch: 3000
+n_epoch: 200
+n_kfolds: 5
+noise_level: 0.0
+drop_rate: 0.0
+
+
+#bnn parameter
+inference: 'nuts' # 'nuts' 'svi' 'hmc'
+n_samples: 100
+warmup: 50
+step_size: 0.001
+num_steps: 40
+# svi parameter
+lr_svi: 0.01
+n_epoch_svi: 200
+#dgp parameter
+lr_dgp: 0.01
+n_epoch_dgp: 100
+
+# fnn setting
+max_n_rules: 50
+
+#gni sigma
+gni_sigma: 0.01
+
+n_rules: 50
+lr: 0.001
+
+dataset_folder: 'pageblock' # each kind of dataset has a same prefix name, dataset is the prefix
+dataset_list:
+  ['pageblock']
+
+#logger
+log_to_file: 'true' # 'false' 'true'
